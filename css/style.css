@@ -272,6 +272,21 @@ h4 {
   }
 }
 
+h5 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@media (max-width: 728px) {
+  h5 {
+    font-size: 16px;
+  }
+}
+
 p {
   font-family: "Raleway", sans-serif;
   color: #161616;
@@ -2471,16 +2486,50 @@ p {
 }
 
 .bl_faq ul li p {
-  padding-top: 16px;
   color: #fff;
   line-height: 150%;
-  display: none;
+  margin-bottom: 16px;
+}
+
+.bl_faq ul li p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
   .bl_faq ul li p {
     line-height: 162.5%;
   }
+}
+
+.bl_faq ul li .hidden {
+  padding-top: 16px;
+}
+
+.bl_faq ul li ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bl_faq ul li ul li {
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  border-bottom: none;
+}
+
+@media (max-width: 425px) {
+  .bl_faq ul li ul li {
+    font-size: 16px;
+  }
+}
+
+.bl_faq ul li h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .main_footer {
