@@ -1381,7 +1381,7 @@ p {
 
 .bl_header .bl_header__content .bl_header__img .mini_block {
   position: absolute;
-  background: rgba(253, 254, 254, 0.12);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.08);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1390,20 +1390,14 @@ p {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: 23px;
-  padding: 16px 16px 16px 40px;
+  width: 370px;
+  height: 160px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .bl_header .bl_header__content .bl_header__img .mini_block {
-    padding: 10px;
-    padding-left: 25px;
-  }
-}
-
-@media (max-width: 600px) {
-  .bl_header .bl_header__content .bl_header__img .mini_block {
-    padding: 8px;
-    padding-left: 20px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1486,6 +1480,21 @@ p {
   .bl_header .bl_header__content .bl_header__img .mini_block p span:first-child {
     font-size: 25px;
   }
+}
+
+.bl_header .bl_header__content .bl_header__img .mini_block html,
+.bl_header .bl_header__content .bl_header__img .mini_block iframe,
+.bl_header .bl_header__content .bl_header__img .mini_block body,
+.bl_header .bl_header__content .bl_header__img .mini_block .tradingview-widget-container,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-embed-widget-wrapper,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-embed-widget-wrapper__body,
+.bl_header .bl_header__content .bl_header__img .mini_block .js-embed-widget-body,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-single-ticker-widget,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview__link,
+.bl_header .bl_header__content .bl_header__img .mini_block .js-link,
+.bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview__link--with-hover {
+  background-color: transparent !important;
 }
 
 .bl_header .bl_header__content .bl_header__img .mini_block1 {
