@@ -1382,14 +1382,8 @@ p {
 .bl_header .bl_header__content .bl_header__img .mini_block {
   position: absolute;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.08);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: inset 24.8667px -24.8667px 24.8667px rgba(192, 193, 193, 0.105), inset -24.8667px 24.8667px 24.8667px rgba(255, 255, 255, 0.105);
-          box-shadow: inset 24.8667px -24.8667px 24.8667px rgba(192, 193, 193, 0.105), inset -24.8667px 24.8667px 24.8667px rgba(255, 255, 255, 0.105);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 23px;
   width: 370px;
   height: 160px;
 }
@@ -1484,7 +1478,11 @@ p {
 
 .bl_header .bl_header__content .bl_header__img .mini_block html,
 .bl_header .bl_header__content .bl_header__img .mini_block iframe,
-.bl_header .bl_header__content .bl_header__img .mini_block body,
+.bl_header .bl_header__content .bl_header__img .mini_block body {
+  background: transparent !important;
+  opacity: 0.7 !important;
+}
+
 .bl_header .bl_header__content .bl_header__img .mini_block .tradingview-widget-container,
 .bl_header .bl_header__content .bl_header__img .mini_block .tv-embed-widget-wrapper,
 .bl_header .bl_header__content .bl_header__img .mini_block .tv-embed-widget-wrapper__body,
@@ -1492,9 +1490,8 @@ p {
 .bl_header .bl_header__content .bl_header__img .mini_block .tv-single-ticker-widget,
 .bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview,
 .bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview__link,
-.bl_header .bl_header__content .bl_header__img .mini_block .js-link,
-.bl_header .bl_header__content .bl_header__img .mini_block .tv-mini-symbol-overview__link--with-hover {
-  background-color: transparent !important;
+.bl_header .bl_header__content .bl_header__img .mini_block .js-link {
+  opacity: 1 !important;
 }
 
 .bl_header .bl_header__content .bl_header__img .mini_block1 {
